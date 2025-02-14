@@ -1,3 +1,3 @@
 "use client";
 
-export { Home as default } from "app/screens/home";
+export { Page1 as default } from "app/screens/page1/page1.web";

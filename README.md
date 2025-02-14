@@ -1,24 +1,18 @@
-# Universal App Starter
-
-<img width="1725" alt="Universal App Starter Screenshot" src="https://github.com/adebayoileri/rnw-starter-private/assets/46798106/a7343cd0-81f6-4e99-9dc3-deac09c95fac">
-
-## Get Started
-**Must have Node and Yarn(v1.22.19) installed to setup locally**
-
+# Install dependencies
 ```sh
-yarn
+yarn install
 ```
 
-## Development
+# Development
 
 ```sh
-yarn run dev
+yarn dev
 ```
 
-## Build
-
+# Install expo go and run app in simulator
 ```sh
-yarn run build
+cd apps/native
+yarn ios
 ```
 
 ### Folder Structure
@@ -49,11 +43,3 @@ universal-app-starter
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [Prettier](https://prettier.io) for code formatting
 - [Turborepo](https://turborepo.dev/) build system for managing monorepo
-
-### Misc
-Interested in setting up a similar project from scratch? Check out the article [here](https://dev.to/adebayoileri/building-a-universal-react-app-with-expo-nextjs-nativewind-3829)
-
-
-### Author
-
-#### [Adebayo Ilerioluwa](https://github.com/adebayoileri)
