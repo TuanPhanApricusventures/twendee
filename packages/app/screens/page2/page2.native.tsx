@@ -1,7 +1,7 @@
 import { Text } from "ui/text";
 import { View } from "ui/view";
 import { Image } from "react-native";
-import { Button } from "ui/button_native";
+import { Button } from "ui/button";
 import Entypo from '@expo/vector-icons/Entypo';
 import { ScrollView } from "react-native";
 import brand_logos from "images/brand_logos.png";
@@ -29,49 +29,50 @@ export function Page2() {
           </Text>
         </View>
 
-        <ScrollView
-          horizontal
-          className="px-4 mt-4 h-20"
-          showsHorizontalScrollIndicator={false}
-        >
-          <Button
-            variant={currentButton === 'shop' ? 'default' : 'secondary'}
-            className="px-4 h-14 mx-1"
-            onPress={() => setCurrentButton('shop')}
+        <View className="px-6 mt-4">
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
           >
-            Shop online
-          </Button>
-          <Button
-            variant={currentButton === 'travel' ? 'default' : 'secondary'}
-            className="px-4 h-14 mx-1"
-            onPress={() => setCurrentButton('travel')}
-          >
-            Book travel
-          </Button>
-          <Button
-            variant={currentButton === 'food' ? 'default' : 'secondary'}
-            className="px-4 h-14 mx-1"
-            onPress={() => setCurrentButton('food')}
-          >
-            Order food
-          </Button>
-          <Button
-            variant={currentButton === 'groceries' ? 'default' : 'secondary'}
-            className="px-4 h-14 mx-1"
-            onPress={() => setCurrentButton('groceries')}
-          >
-            Order groceries
-          </Button>
-          <Button
-            variant={currentButton === 'hotel' ? 'default' : 'secondary'}
-            className="px-4 h-14 mx-1"
-            onPress={() => setCurrentButton('hotel')}
-          >
-            Book hotel
-          </Button>
-        </ScrollView>
-        <View className="px-6 items-center justify-center">
-          <Image source={brand_logos} className="w-[350px] h-[350px]" resizeMode="contain" />
+            <Button
+              variant={currentButton === 'shop' ? 'default' : 'secondary'}
+              className="px-4 h-10"
+              onPress={() => setCurrentButton('shop')}
+            >
+              Shop online
+            </Button>
+            <Button
+              variant={currentButton === 'travel' ? 'default' : 'secondary'}
+              className="px-4 h-10 mx-1"
+              onPress={() => setCurrentButton('travel')}
+            >
+              Book travel
+            </Button>
+            <Button
+              variant={currentButton === 'food' ? 'default' : 'secondary'}
+              className="px-4 h-10 mx-1"
+              onPress={() => setCurrentButton('food')}
+            >
+              Order food
+            </Button>
+            <Button
+              variant={currentButton === 'groceries' ? 'default' : 'secondary'}
+              className="px-4 h-10 mx-1"
+              onPress={() => setCurrentButton('groceries')}
+            >
+              Order groceries
+            </Button>
+            <Button
+              variant={currentButton === 'hotel' ? 'default' : 'secondary'}
+              className="px-4 h-10 mx-1"
+              onPress={() => setCurrentButton('hotel')}
+            >
+              Book hotel
+            </Button>
+          </ScrollView>
+        </View>
+        <View className="px-6 pt-4">
+          <Image source={brand_logos} className="w-[100%] h-[350px]" resizeMode="contain" />
         </View>
       </View>
 

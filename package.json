@@ -4,11 +4,9 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "run:ios": "cd apps/native && yarn ios",
     "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "workspaces": [
     "apps/*",

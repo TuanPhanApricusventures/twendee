@@ -11,8 +11,7 @@ yarn dev
 
 # Install expo go and run app in simulator
 ```sh
-cd apps/native
-yarn ios
+yarn run:ios
 ```
 
 ### Folder Structure

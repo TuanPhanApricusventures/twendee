@@ -1,7 +1,7 @@
 import { Text } from "ui/text";
 import { View } from "ui/view";
 import Image from 'next/image';
-import { Button } from "ui/button_web";
+import { Button } from "ui/button";
 import arrow_right from "images/arrow_right.png";
 import { useState } from "react";
 import { useRouter } from 'next/navigation'
@@ -12,7 +12,7 @@ export function Page2() {
   return (
     <View className="flex-1 bg-[#130739] overflow-x-hidden">
       <View className="flex-1">
-        <View className="mt-12 pl-6">
+        <View className="mt-12 px-6">
           <View className="flex-row items-center justify-start">
             <View className="w-8 h-8 bg-purple-600 rounded-full items-center justify-center">
               <Text className="text-white font-bold">1</Text>
@@ -27,45 +27,45 @@ export function Page2() {
           </Text>
         </View>
 
-        <div className="flex overflow-x-auto px-4 mt-4 no-scrollbar scrollbar-hide">
+        <div className="flex overflow-x-auto mt-4 px-6 no-scrollbar scrollbar-hide">
           <Button
             variant={currentButton === 'shop' ? 'default' : 'secondary'}
-            className="px-4 h-14 mx-1"
+            className="px-4 h-10"
             onPress={() => setCurrentButton('shop')}
           >
             Shop online
           </Button>
           <Button
             variant={currentButton === 'travel' ? 'default' : 'secondary'} 
-            className="px-4 h-14 mx-1"
+            className="px-4 h-10 mx-1"
             onPress={() => setCurrentButton('travel')}
           >
             Book travel
           </Button>
           <Button
             variant={currentButton === 'food' ? 'default' : 'secondary'}
-            className="px-4 h-14 mx-1"
+            className="px-4 h-10 mx-1"
             onPress={() => setCurrentButton('food')}
           >
             Order food
           </Button>
           <Button
             variant={currentButton === 'groceries' ? 'default' : 'secondary'}
-            className="px-4 h-14 mx-1"
+            className="px-4 h-10 mx-1"
             onPress={() => setCurrentButton('groceries')}
           >
             Order groceries
           </Button>
           <Button
             variant={currentButton === 'hotel' ? 'default' : 'secondary'}
-            className="px-4 h-14 mx-1"
+            className="px-4 h-10 mx-1"
             onPress={() => setCurrentButton('hotel')}
           >
             Book hotel
           </Button>
         </div>
 
-        <View className="px-6 items-center justify-center">
+        <View className="px-6 pt-4">
           <Image src={brand_logos} className="w-[350px] h-[350px]" alt="brand_logos" />
         </View>
       </View>

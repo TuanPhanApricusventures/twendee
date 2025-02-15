@@ -1,7 +1,7 @@
 import { Text } from "ui/text";
 import { View } from "ui/view";
 import Image from 'next/image';
-import { Button } from "ui/button_web";
+import { Button } from "ui/button";
 import gift from "images/gift.png";
 import plane from "images/plane.png";
 import passport from "images/passport.png";

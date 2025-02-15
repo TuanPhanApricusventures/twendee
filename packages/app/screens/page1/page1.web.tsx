@@ -3,7 +3,7 @@ import { View } from "ui/view";
 import Image from 'next/image';
 import map from "images/map.png";
 import logo from "images/logo.png";
-import { Button } from "ui/button_web";
+import { Button } from "ui/button";
 import { useRouter } from 'next/navigation'
 import arrow_right from "images/arrow_right.png";
 

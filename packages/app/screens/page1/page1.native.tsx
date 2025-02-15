@@ -3,7 +3,7 @@ import { View } from "ui/view";
 import { Image } from "react-native";
 import map from "images/map.png";
 import logo from "images/logo.png";
-import { Button } from "ui/button_native";
+import { Button } from "ui/button";
 import Entypo from '@expo/vector-icons/Entypo';
 import { router } from "expo-router";
 
